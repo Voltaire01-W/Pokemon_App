@@ -18,4 +18,4 @@ const GET_POKEMONS = gql`
     }
 `;
 
-export {default as GET_POKEMONS} from '../graphql/get-pokemons'
+export default GET_POKEMONS;

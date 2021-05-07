@@ -1,7 +1,7 @@
 import React from 'react';
 import { useQuery } from '@apollo/react-hooks';
-import {Pokemon} from '../components/Pokemon';
-import {GET_POKEMONS} from '../graphql/get-pokemons';
+import Pokemon from '../components/Pokemon';
+import GET_POKEMONS from '../graphql/get-pokemons';
 
 function PokemonsContainer() {
     const { data: { pokemons = [] } = {} } = useQuery(GET_POKEMONS, {
@@ -15,4 +15,4 @@ function PokemonsContainer() {
     );
 };
 
-export {default as PokemonsContainer} from '../containers/PokemonsContainer'
+export default PokemonsContainer;

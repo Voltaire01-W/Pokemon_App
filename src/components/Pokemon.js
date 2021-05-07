@@ -22,4 +22,4 @@ function Pokemon({ pokemon }) {
     );
 };
 
-export {default as Pokemon} from '../components/Pokemon'
+export default Pokemon;
