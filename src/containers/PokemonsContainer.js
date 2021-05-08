@@ -2,10 +2,11 @@ import React from 'react';
 import { useQuery } from '@apollo/react-hooks';
 import Pokemon from '../components/Pokemon';
 import GET_POKEMONS from '../graphql/get-pokemons';
+import '../App.css'
 
 function PokemonsContainer() {
     const { data: { pokemons = [] } = {} } = useQuery(GET_POKEMONS, {
-        variables: { first: 9 },
+        variables: { first: 1000 },
     });
     
     return (
