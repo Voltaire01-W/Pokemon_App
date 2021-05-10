@@ -113,6 +113,16 @@ body {
     border-radius: 5px;
 }
 
+.container .search-bar {
+    display: flex;
+    border: solid;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding-right: 137px;
+    flex-direction: column;
+}
+
 @media (max-width: 800px) {
     .container .pokemon {
         width: 100%;
